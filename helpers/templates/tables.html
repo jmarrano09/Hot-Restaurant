@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Employee Management Data</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <!-- ****************** jumbotron ********************** -->
+    <div class="container">
+        <div style="background-color: black; color: white" class="jumbotron">
+            <h1><span class="glyphicon glyphicon-fire">HOT RESTAURANT</span></h1>
+            <hr>
+            <h3>Make Your Reservation</h3>
+            <br>
+            <div style="text-align: center;">
+                <a href="tables.html">
+                    <button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span>View Tables</button>
+                </a>
+                <a href="reservations.html">
+                    <button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-home"></span>Home</button>
+                </a>
+                <a href="#">
+                    <button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span>API Table Link</button>
+                </a>
+                <a href="#">
+                    <button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span>API Wait List</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- ******************* container ********************* -->
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 style="color: white; font-size: 20px;">Current Reservation</h2>
+            </div>
+            <div class="panel-body">
+                <table class="table">
+                    <!-- ******************* table for current reservations ********************* -->
+                    <thead>
+                        <tr>
+                            <th scope="col">Name:</th>
+                            <th scope="col">Phone Number:</th>
+                            <th scope="col">Email:</th>
+                            <th scope="col">Unique ID:</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recent-employees">
+                    </tbody>
+                </table>
+                <!-- ******************* table for current reservations ********************* -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="waiting-list" class="panel panel-default">
+            <div class="panel-heading">
+                <h2 style="color: white; font-size: 20px;">Waiting List</h2>
+            </div>
+            <div class="panel-body">
+                <table class="table">
+                    <!-- ******************* table for waiting list ********************* -->
+                    <thead>
+                        <tr>
+                            <th scope="col">Name:</th>
+                            <th scope="col">Phone Number:</th>
+                            <th scope="col">Email:</th>
+                            <th scope="col">Unique ID:</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recent-employees">
+                    </tbody>
+                </table>
+                <!-- ******************* table for waiting list ********************* -->
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js"></script>
+</body>
+
+</html>
